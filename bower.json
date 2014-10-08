@@ -1,0 +1,28 @@
+{
+	"name": "plug.play.js",
+	"version": "1.0.0",
+	"description": "A JavaScript API for communicating with Universal Plug and Play (UPnP) Services obtained via the W3C Network Service Discovery draft specification (20 February 2014).",
+	"main": "lib/plug.upnp.js",
+	"license": "Apache-2.0",
+	"ignore": [
+		"**/.*",
+		"vendor",
+		"test",
+		"Gruntfile.js",
+		"node_modules",
+		"bower_components"
+	],
+	"keywords": [
+		"UPnP",
+		"javascript",
+		"library"
+	],
+	"dependencies": {
+		"rsvp": "^3.0"
+	},
+	"homepage": "https://github.com/derflocki/plug.play.js",
+	"authors": [
+		"Rich Tibbett"
+	],
+	"private": true
+}

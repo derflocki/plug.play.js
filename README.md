@@ -1,11 +1,11 @@
 Plug.Play.js
 ====================
 
-A JavaScript API for communicating with Universal Plug and Play (UPnP) Services obtained via the [W3C Network Service Discovery draft specification (4th October 2012 version)](http://www.w3.org/TR/2012/WD-discovery-api-20121004/).
+A JavaScript API for communicating with Universal Plug and Play (UPnP) Services obtained via the [Network Service Discovery, W3C Working Draft 20 February 2014](http://www.w3.org/TR/2014/WD-discovery-api-20140220/).
 
 ### Setup
 
-This API requires a web browser that supports [<code>navigator.getNetworkServices</code>](http://www.w3.org/TR/2012/WD-discovery-api-20121004/#dom-navigator-getnetworkservices).
+This API requires a web browser that supports [<code>navigator.getNetworkServices</code>](http://www.w3.org/TR/2014/WD-discovery-api-20140220/#dom-navigator-getnetworkservices).
 
 Opera [released a Labs build](http://dev.opera.com/articles/view/network-service-discovery-api-support-in-opera/) that provides support for this API. You can read more and download the browser builds at the [Dev.Opera blog](http://dev.opera.com/articles/view/network-service-discovery-api-support-in-opera/).
 
@@ -35,9 +35,8 @@ If you are running this API in a supported browser, as discussed in the [Setup](
 
     if(navigator.getNetworkServices) {
       navigator.getNetworkServices(
-        'upnp:urn:schemas-upnp-org:service:RenderingControl:1',
-        successCallback
-      );
+        'upnp:urn:schemas-upnp-org:service:RenderingControl:1'
+      ).then(successCallback);
     }
 
 The <code>successCallback</code> function takes one argument, a [<code>NetworkServices</code>](http://www.w3.org/TR/2012/WD-discovery-api-20121004/#networkservices) object that acts like an array of [<code>NetworkService</code>](http://www.w3.org/TR/2012/WD-discovery-api-20121004/#networkservice) objects. When services are found in the current network that match the requested service type(s) the web browser will trigger execution of this function.
