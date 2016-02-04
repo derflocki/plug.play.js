@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 		uglify: {
 			dist: {
 				options: {
-					compress: true,
+					compress: {},
 				},
 				files: {
 					'lib/plug.upnp.min.js': ['lib/plug.upnp.js'],
