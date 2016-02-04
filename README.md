@@ -90,7 +90,7 @@ _Boolean. Whether to spit out more debug messages to the console. Useful when de
 
 #### Step 3: Invoke UPnP actions and process UPnP responses
 
-The Plug.Play API is built to work on top of [rsvp.js](https://github.com/tildeio/rsvp.js) and therefore provides a  [Promises/A](http://wiki.commonjs.org/wiki/Promises/A)-based interaction model. As part of the Promises model this API supports [method chaining](https://github.com/kriskowal/q#chaining) and [promise sequences](https://github.com/kriskowal/q#sequences).
+The Plug.Play API provides a  [Promises/A](http://wiki.commonjs.org/wiki/Promises/A)-based interaction model. As part of the Promises model this API supports [method chaining](https://github.com/kriskowal/q#chaining) and [promise sequences](https://github.com/kriskowal/q#sequences). If your environment does not support promises, it is suggested to check out [es6-promise](https://github.com/jakearchibald/es6-promise).
 
 Here is a simple example of querying the mute state of a UPnP RenderingControl:1 service on a created <code>Plug.UPnP</code> object called <code>upnpService</code>:
 
